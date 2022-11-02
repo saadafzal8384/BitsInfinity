@@ -346,6 +346,7 @@ h2.primary-heading {
 }
 .text-column {
     width: 40%;
+    padding: 0rem 2rem;
 }
 
 @media (max-width: 60rem) {
