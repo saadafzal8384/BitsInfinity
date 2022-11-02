@@ -13,7 +13,10 @@ body{
 
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Roboto' sans-serif ;
+    font-family: 'Roboto', sans-serif ;
+}
+html,body{
+    overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -169,7 +172,7 @@ h3.sub-text
 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin: 15px 0;
+    margin: 15px 0px;
 }
 h3.hello span{
     font-family: 'Clicker Script', cursive;
@@ -310,20 +313,64 @@ h2.primary-heading {
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing:0.5rem;
+    padding: 2rem 0rem;
 }
 .company-description {
+    font-size: 18px;
+    line-height: 2rem;
     text-align: justify;
+    padding: 2rem 0rem;
+}
+.home-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 8rem 0rem;
+}
+.home-text-column {
+    width: 40%;
+    padding: 1rem;
+}
+.home-image-column {
+    width: 60%;
+    padding: 1rem;
 }
 .about-container {
     display: flex;
 }
 .column-image {
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 60vh;
 }
 .image-column {
     width: 60%;
 }
 .text-column {
-    width: 30%;
+    width: 40%;
+}
+
+@media (max-width: 60rem) {
+    .aside {
+        display: none;
+    }
+    .main-content {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .home-container {
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+    .home-text-column {
+        width: 100%;
+    }
+    .home-image-column {
+        width: 100%;
+    }
+    h2.primary-heading {
+        font-size: 2rem;
+    }
+    h3.sub-text {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
 }
