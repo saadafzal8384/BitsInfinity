@@ -241,11 +241,7 @@ margin-bottom: 60px;
 {
     display: inline-block;
 }
-.contact .contact-info-item .fa
-{
-    font-size: 25;
-    color: var(--skin-color);
-}
+
 .contact .contact-info-item h4{
     font-size: 18px;
     font-weight: 700;
@@ -291,6 +287,7 @@ margin-bottom: 60px;
     padding: 10px 25px;
     font-size: 16px;
     color: var(--bg-black-700);
+
     transition: all 0.3s ease;
 }
 .contact .contact-form .form-item .form-control:focus
