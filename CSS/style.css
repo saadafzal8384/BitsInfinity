@@ -223,14 +223,14 @@ color: var(--skin-color);
 }
 /* contct */
 .contact {
-    background-color: #FFF;
+    background-color: var(--clr-bg-grey);
 }
 .contact-title
 {
     color: var(--clr-main-black);
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 1px;
+    font-size: 18px;
+    margin: 2rem 0rem;
 }
 .contact-sub-title
 {
@@ -377,6 +377,7 @@ div.vision {
 .vision-text {
     padding: 2rem 0rem;
     line-height: 2.5rem;
+    font-size: 18px;
 }
 .blockquotes {
     font-weight: bold;
