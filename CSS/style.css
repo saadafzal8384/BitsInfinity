@@ -333,11 +333,16 @@ h2.primary-heading {
 .home-container {
     display: flex;
     box-sizing: border-box;
-    padding: 2rem 0rem;
+}
+.home-image {
+    margin-top: -1rem;
+    margin-left: 5rem;
+    height: 100vh !important;
 }
 .home-text-column {
     width: 40%;
-    padding: 1rem;
+    margin-top: 3rem;
+    padding: 3rem;
 }
 .home-image-column {
     width: 60%;
