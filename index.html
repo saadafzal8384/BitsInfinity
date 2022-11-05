@@ -13,6 +13,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="CSS/team_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ===== Main Container Start ===== -->
@@ -20,25 +31,25 @@
       <!-- ===== Aside Start ===== -->
       <div class="aside">
         <div class="logo">
-          <!-- <img src="IMG/logo.png" alt="logo" width="95px"> -->
-          <a href="#"><span>B</span>its<span>i</span>nfinity</a>
+          <img class="logo-image" src="IMG/Infinity.png" alt="logo" />
+          <!-- <a href="#"><span>B</span>its<span>i</span>nfinity</a> -->
         </div>
         <div>
           <ul class="nav">
             <li>
-              <a href="#"><i class="fa fa-home"></i> Home</a>
+              <a href="#home"><i class="fa fa-home"></i> Home</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-user"></i> About Us</a>
+              <a href="#about"><i class="fa fa-user"></i> About Us</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-list"></i> Values</a>
+              <a href="#values"><i class="fa fa-list"></i> Values</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-briefcase"></i> Team</a>
+              <a href="#team"><i class="fa fa-briefcase"></i> Team</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-comments"></i> Contact</a>
+              <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
             </li>
           </ul>
         </div>
@@ -48,7 +59,7 @@
       <!-- ===== Main Content Start ===== -->
       <div class="main-content">
         <!-- ===== Home Section Start ===== -->
-        <section class="home">
+        <section class="home" id="home">
           <div class="home-container">
             <div class="home-text-column">
               <h2 class="primary-heading">BitsInfinity</h2>
@@ -61,17 +72,13 @@
               <a href="#contact" class="btn hire-me">Learn More</a>
             </div>
             <div class="home-image-column">
-              <img
-                class="column-image"
-                src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                alt=""
-              />
+              <img class="column-image" src="img/new-bg.png" alt="" />
             </div>
           </div>
         </section>
         <!-- ===== Home Section End ===== -->
         <!-- ===== About Section Start ===== -->
-        <section class="about section">
+        <section class="about section" id="about">
           <div class="container">
             <div class="about-container">
               <div class="image-column">
@@ -104,7 +111,7 @@
         </section>
         <!-- ===== About Section End ===== -->
         <!-- ===== Service Section Start ===== -->
-        <section class="Values section" style="background: #fff">
+        <section class="Values section" id="values">
           <div class="container">
             <div class="vision">
               <h2 class="section-heading">VISION & VALUES</h2>
@@ -120,22 +127,22 @@
             <div class="values-container">
               <div class="value">
                 <i class="fa-solid fa-users value-icon"></i>
-                <h3>Customer First</h3>
+                <h3 class="value-heading">Customer First</h3>
                 <p>Customer success determines our success and future</p>
               </div>
               <div class="value">
-                <i class="fa-solid fa-users value-icon"></i>
-                <h3>Customer First</h3>
+                <i class="fa-solid fa-cubes-stacked value-icon"></i>
+                <h3 class="value-heading">Customer First</h3>
                 <p>Customer success determines our success and future</p>
               </div>
               <div class="value">
-                <i class="fa-solid fa-users value-icon"></i>
-                <h3>Customer First</h3>
+                <i class="fa-sharp fa-solid fa-database value-icon"></i>
+                <h3 class="value-heading">Customer First</h3>
                 <p>Customer success determines our success and future</p>
               </div>
               <div class="value">
-                <i class="fa-solid fa-users value-icon"></i>
-                <h3>Customer First</h3>
+                <i class="fa-solid fa-globe value-icon"></i>
+                <h3 class="value-heading">Customer First</h3>
                 <p>Customer success determines our success and future</p>
               </div>
             </div>
@@ -143,18 +150,191 @@
         </section>
         <!-- ===== Service  Section End ===== -->
         <!-- ===== Portfolio Section Start ===== -->
-        <section class="Team section">
+        <section class="mission section">
           <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>Team</h2>
+            <div class="about-container">
+              <div class="image-column">
+                <img
+                  class="column-image"
+                  src="https://img.freepik.com/free-photo/cheerful-young-colleagues-indoors-coworking_171337-746.jpg?w=2000"
+                  alt="Team image"
+                />
+              </div>
+              <div class="text-column">
+                <h2 class="section-heading">MISSION STATEMENT</h2>
+                <p class="section-text mb-2">
+                  BitsInfinity is an industrial data management company. We
+                  provide large numbers of stable services to manage data that
+                  generated from different fields of industry.
+                </p>
+                <h2 class="section-heading">PURPOSE</h2>
+                <p class="section-text">
+                  BitsInfinity is a high-tech enterprise dedicated to industrial
+                  data management. The business covers multiple industries and
+                  is committed to the construction of the big data industry
+                  ecological chain. We adopt advanced technology to realize the
+                  full life cycle management of data from collection, processing
+                  to application. Our products are applied to various fields
+                  such as the Internet, finance, government, and intelligent
+                  manufacturing.
+                </p>
               </div>
             </div>
           </div>
         </section>
         <!-- ===== Portfolio  Section End ===== -->
+        <!-- ==== Team Section Started =====  -->
+        <section class="team section" id="team">
+          <div class="container">
+            <div class="team-container">
+              <div class="vision">
+                <h2 class="section-heading">Our Team</h2>
+                <p class="vision-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ullam, esse excepturi eligendi quod tempore facilis!
+                </p>
+                <p class="team-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Maiores, facilis debitis maxime commodi quia velit dolorum
+                  molestias eveniet minima dolorem voluptatibus doloremque
+                  laborum placeat ad odit ipsam nam sapiente eligendi accusamus
+                  beatae dolore tenetur a dolores suscipit. Natus, consectetur
+                  accusantium inventore, optio accusamus ipsum sapiente
+                  architecto id, tempore harum laboriosam.
+                </p>
+              </div>
+              <div class="team-container">
+                <div class="card">
+                  <div class="content">
+                    <div class="imgBx">
+                      <img src="img/sa.jpg" alt="" />
+                    </div>
+                    <div class="contentBx">
+                      <h4>Muhamad</h4>
+                      <h5>Engineer</h5>
+                    </div>
+                    <div class="sci">
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa fa-facebook-official"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <div class="imgBx">
+                      <img src="img/s.jpg" alt="" />
+                    </div>
+                    <div class="contentBx">
+                      <h4>Sozan</h4>
+                      <h5>Designer</h5>
+                    </div>
+                    <div class="sci">
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa fa-facebook-official"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <div class="imgBx">
+                      <img src="img/Efan.jpg" alt="" />
+                    </div>
+                    <div class="contentBx">
+                      <h4>Efan</h4>
+                      <h5>Designer</h5>
+                    </div>
+                    <div class="sci">
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa fa-facebook-official"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <div class="imgBx">
+                      <img src="img/sha.jpg" alt="" />
+                    </div>
+                    <div class="contentBx">
+                      <h4>Sha</h4>
+                      <h5>Designer</h5>
+                    </div>
+                    <div class="sci">
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa fa-facebook-official"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <div class="imgBx">
+                      <img src="img/Ja.jpg" alt="" />
+                    </div>
+                    <div class="contentBx">
+                      <h4>Ja</h4>
+                      <h5>Designer</h5>
+                    </div>
+                    <div class="sci">
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa fa-facebook-official"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- ==== Contact Section Started =====  -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -252,6 +432,42 @@
             </div>
           </div>
         </section>
+        <footer class="footer">
+          <div class="disclaimer">
+            <span class="disclaimer-text"
+              >This website does not belong to a real company. It is a Planspiel
+              Web Engineering project.</span
+            >
+          </div>
+          <div class="copyrights">
+            <span class="copyright-text"
+              >2022 © Copyright BitsInfinty. All Rights Reserved</span
+            >
+          </div>
+          <div class="social-icon-container">
+            <a
+              class="social-media-container-icon"
+              href="www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              class="social-media-container-icon"
+              href="www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a
+              class="social-media-container-icon"
+              href="www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </footer>
       </div>
 
       <!-- ==== Contact Section End =====  -->
@@ -259,7 +475,5 @@
       <!-- ===== Main Content End ===== -->
     </div>
     <!-- ===== Main Container End ===== -->
-    <!-- ===== JS Files ===== -->
-    <script src="JS/script.js"></script>
   </body>
 </html>
