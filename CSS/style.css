@@ -343,12 +343,12 @@ h2.primary-heading {
     height: 100vh !important;
 }
 .home-text-column {
-    width: 40%;
+    width: 50%;
     margin-top: 3rem;
     padding: 3rem;
 }
 .home-image-column {
-    width: 60%;
+    width: 50%;
     padding: 1rem;
 }
 section.about,section.mission  {
