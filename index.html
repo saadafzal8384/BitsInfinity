@@ -24,10 +24,35 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/jquery.back-to-top.css" />
   </head>
   <body>
     <!-- ===== Main Container Start ===== -->
     <div class="main-container">
+      <div class="mobile-nav-container">
+        <button class="close-menu">
+          <i class="fa-solid fa-xmark cross-icon"></i>
+        </button>
+        <ul class="mobile-navigation" data-visible="false">
+          <li>
+            <a href="#home"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fa-solid fa-circle-info"></i> About Us</a
+            >
+          </li>
+          <li>
+            <a href="#values"><i class="fa-solid fa-person"></i> Culture</a>
+          </li>
+          <li>
+            <a href="#team"><i class="fa-solid fa-people-group"></i> Team</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
       <!-- ===== Aside Start ===== -->
       <div class="aside">
         <div class="logo">
@@ -63,6 +88,9 @@
         <!-- ===== Home Section Start ===== -->
         <section class="home" id="home">
           <div class="home-container">
+            <button class="menu-btn">
+              <i class="fa-solid fa-bars hamburger-icon"></i>
+            </button>
             <div class="home-text-column">
               <h2 class="primary-heading">BitsInfinity</h2>
               <h3 class="sub-text">Infinite data, infinite possibilities</h3>
@@ -199,15 +227,6 @@
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Ullam, esse excepturi eligendi quod tempore facilis!
                 </p>
-                <p class="team-description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Maiores, facilis debitis maxime commodi quia velit dolorum
-                  molestias eveniet minima dolorem voluptatibus doloremque
-                  laborum placeat ad odit ipsam nam sapiente eligendi accusamus
-                  beatae dolore tenetur a dolores suscipit. Natus, consectetur
-                  accusantium inventore, optio accusamus ipsum sapiente
-                  architecto id, tempore harum laboriosam.
-                </p>
               </div>
               <div class="team-container">
                 <div class="card">
@@ -216,8 +235,8 @@
                       <img src="img/sa.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Muhamad</h4>
-                      <h5>Engineer</h5>
+                      <h4>Saad</h4>
+                      <h5>Founder</h5>
                     </div>
                     <div class="sci">
                       <a href="#"
@@ -242,7 +261,7 @@
                     </div>
                     <div class="contentBx">
                       <h4>Sozan</h4>
-                      <h5>Designer</h5>
+                      <h5>Frontend Developer</h5>
                     </div>
                     <div class="sci">
                       <a href="#"
@@ -266,8 +285,8 @@
                       <img src="img/Efan.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Efan</h4>
-                      <h5>Designer</h5>
+                      <h4>Yiffan Du</h4>
+                      <h5>Software Engineer</h5>
                     </div>
                     <div class="sci">
                       <a href="#"
@@ -291,8 +310,8 @@
                       <img src="img/sha.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Sha</h4>
-                      <h5>Designer</h5>
+                      <h4>Xia</h4>
+                      <h5>Research Analyst</h5>
                     </div>
                     <div class="sci">
                       <a href="#"
@@ -316,8 +335,8 @@
                       <img src="img/Ja.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Ja</h4>
-                      <h5>Designer</h5>
+                      <h4>Cao</h4>
+                      <h5>Software Engineer</h5>
                     </div>
                     <div class="sci">
                       <a href="#"
@@ -479,5 +498,21 @@
       <!-- ===== Main Content End ===== -->
     </div>
     <!-- ===== Main Container End ===== -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <a href="#" class="bck"></a>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.back-to-top.js"></script>
+    <script>
+      $(function () {
+        $(".bck").backToTop({
+          iconName: "fas fa-arrow-up",
+          fxName: "rightToLeft",
+        });
+      });
+    </script>
   </body>
 </html>

@@ -8,7 +8,7 @@
 .team-container .card
 {
     width: 18%;
-    height: 365px;
+    height: 350px;
     padding: 20px 15px;
     background: #f2f3f7;
     box-shadow: 0.6em 0.6em 1.2em #d2dcef, -0.5em -0.5em 1em #ffffff;
@@ -72,7 +72,11 @@
 .team-container .card .content .sci a:hover{
     color: #00e091;
 }
-
+@media (max-width: 70em) {
+    .team-container .card {
+        width: 48%;
+    }    
+}
 @media (max-width: 50em) {
     .team-container .card {
         width: 100%;
