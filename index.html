@@ -26,7 +26,7 @@
     />
     <link rel="stylesheet" href="css/jquery.back-to-top.css" />
   </head>
-  <body>
+  <body class="body">
     <!-- ===== Main Container Start ===== -->
     <div class="main-container">
       <div class="mobile-nav-container">
@@ -35,49 +35,50 @@
         </button>
         <ul class="mobile-navigation" data-visible="false">
           <li>
-            <a href="#home"><i class="fa fa-home"></i> Home</a>
+            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
           </li>
           <li>
-            <a href="#about"
-              ><i class="fa-solid fa-circle-info"></i> About Us</a
-            >
+            <a href="#about"><i class="fa-solid fa-file-lines"></i> About</a>
           </li>
           <li>
-            <a href="#values"><i class="fa-solid fa-person"></i> Culture</a>
+            <a href="#values"><i class="fa-solid fa-heart"></i> Culture</a>
           </li>
           <li>
             <a href="#team"><i class="fa-solid fa-people-group"></i> Team</a>
           </li>
           <li>
-            <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
           </li>
         </ul>
       </div>
       <!-- ===== Aside Start ===== -->
       <div class="aside">
         <div class="logo">
-          <img class="logo-image" src="IMG/new-logo-1.png" alt="logo" />
+          <!-- <img class="logo-image" src="IMG/neu-logo-white.png" alt="logo" /> -->
+          <img class="logo-image" src="IMG/sazan.png" alt="logo" />
           <!-- <a href="#"><span>B</span>its<span>i</span>nfinity</a> -->
         </div>
         <div>
           <ul class="nav">
             <li>
-              <a href="#home"><i class="fa fa-home"></i> Home</a>
+              <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
             </li>
             <li>
-              <a href="#about"
-                ><i class="fa-solid fa-circle-info"></i> About Us</a
-              >
+              <a href="#about"><i class="fa-solid fa-file-lines"></i>About</a>
             </li>
             <li>
-              <a href="#values"><i class="fa-solid fa-person"></i> Culture</a>
+              <a href="#values"><i class="fa-solid fa-heart"></i>Culture</a>
             </li>
             <li>
-              <a href="#team"><i class="fa-solid fa-people-group"></i> Team</a>
+              <a href="#team"><i class="fa-solid fa-people-group"></i>Team</a>
             </li>
             <li>
-              <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+              <a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a>
             </li>
+            <div class="toggle-mode-list-item">
+              <i class="toggle-icon fa-solid fa-moon" id="icon"></i>
+              <span id="toggle-mode-text">Dark Mode</span>
+            </div>
           </ul>
         </div>
       </div>
@@ -103,6 +104,7 @@
             </div>
             <div class="home-image-column">
               <img
+                id="home-img"
                 class="column-image home-image"
                 src="img/new-bg.png"
                 alt=""
@@ -116,18 +118,19 @@
           <div class="container">
             <div class="about-container">
               <div class="image-column">
-                <img
-                  class="column-image"
-                  src="https://img.freepik.com/free-photo/cheerful-young-colleagues-indoors-coworking_171337-746.jpg?w=2000"
-                  alt="Team image"
-                />
+                <img class="column-image" src="img/team.jpg" alt="Team image" />
               </div>
               <div class="text-column">
                 <h2 class="section-heading">ABOUT US</h2>
                 <p class="section-text">
-                  BitsInfinity is an industrial data management company. We
-                  provide large numbers of stable services to manage data that
-                  generated from different fields of industry.
+                  BitsInfinity is a high-tech enterprise dedicated to industrial
+                  data management. The business covers multiple industries and
+                  is committed to the construction of the big data industry
+                  ecological chain. We adopt advanced technology to realize the
+                  full life cycle management of data from collection, processing
+                  to application. Our products are applied to various fields
+                  such as the Internet, finance, government, and intelligent
+                  manufacturing.
                 </p>
                 <p class="section-text">
                   BitsInfinity is a high-tech enterprise dedicated to industrial
@@ -160,24 +163,24 @@
             </div>
             <div class="values-container">
               <div class="value">
-                <i class="fa-solid fa-users value-icon"></i>
-                <h3 class="value-heading">Customer First</h3>
-                <p>Customer success determines our success and future</p>
+                <i class="fa-solid fa-handshake value-icon"></i>
+                <h3 class="value-heading">Commitment</h3>
+                <p>We are committed to customer’s satisfaction.</p>
               </div>
               <div class="value">
-                <i class="fa-solid fa-cubes-stacked value-icon"></i>
-                <h3 class="value-heading">Customer First</h3>
-                <p>Customer success determines our success and future</p>
+                <i class="fa-solid fa-face-smile value-icon"></i>
+                <h3 class="value-heading">Enthusiasm</h3>
+                <p>We are enthusiastic about our jobs</p>
               </div>
               <div class="value">
                 <i class="fa-sharp fa-solid fa-database value-icon"></i>
-                <h3 class="value-heading">Customer First</h3>
-                <p>Customer success determines our success and future</p>
+                <h3 class="value-heading">Efficency</h3>
+                <p>We use agile methods to solve problems fast and well.</p>
               </div>
               <div class="value">
-                <i class="fa-solid fa-globe value-icon"></i>
-                <h3 class="value-heading">Customer First</h3>
-                <p>Customer success determines our success and future</p>
+                <i class="fa-solid fa-lock value-icon"></i>
+                <h3 class="value-heading">Privacy</h3>
+                <p>we care about your data privacy, as it is our own!</p>
               </div>
             </div>
           </div>
@@ -197,20 +200,18 @@
               <div class="text-column">
                 <h2 class="section-heading">MISSION STATEMENT</h2>
                 <p class="section-text mb-2">
-                  BitsInfinity is an industrial data management company. We
-                  provide large numbers of stable services to manage data that
-                  generated from different fields of industry.
+                  We seek challenges in the domain of Industrial data management
+                  and are eager to solve them. We provide fast and quality
+                  services to our customers by designing the best plans for
+                  managing the data through agile team work. We spot potential
+                  values from the data of our customers which enables our
+                  customers to be more competitive.
                 </p>
                 <h2 class="section-heading">PURPOSE</h2>
                 <p class="section-text">
-                  BitsInfinity is a high-tech enterprise dedicated to industrial
-                  data management. The business covers multiple industries and
-                  is committed to the construction of the big data industry
-                  ecological chain. We adopt advanced technology to realize the
-                  full life cycle management of data from collection, processing
-                  to application. Our products are applied to various fields
-                  such as the Internet, finance, government, and intelligent
-                  manufacturing.
+                  We provide solutions to analyze specific data and help use the
+                  trends and information presented in the data to plan the
+                  business journey accordingly
                 </p>
               </div>
             </div>
@@ -224,32 +225,33 @@
               <div class="vision">
                 <h2 class="section-heading">OUR TEAM</h2>
                 <p class="vision-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ullam, esse excepturi eligendi quod tempore facilis!
+                  These people make BitsInfinity better everyday!
                 </p>
               </div>
               <div class="team-container">
                 <div class="card">
                   <div class="content">
                     <div class="imgBx">
-                      <img src="img/sa.jpg" alt="" />
+                      <img class="full-size" src="img/saad.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Saad</h4>
+                      <h4>Saad Afzal</h4>
                       <h5>Founder</h5>
                     </div>
                     <div class="sci">
-                      <a href="#"
+                      <a href="https://www.instagram.com/bitsinfinity/"
                         ><i class="fa fa-instagram" aria-hidden="true"></i
                       ></a>
-                      <a href="#"
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100087399739017"
                         ><i
                           class="fa fa-facebook-official"
                           aria-hidden="true"
                         ></i
                       ></a>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      <a
+                        href="https://www.linkedin.com/in/bitsinfinty-506514256/"
+                        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
                       ></a>
                     </div>
                   </div>
@@ -257,24 +259,26 @@
                 <div class="card">
                   <div class="content">
                     <div class="imgBx">
-                      <img src="img/s.jpg" alt="" />
+                      <img class="full-size" src="img/sozan.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Sozan</h4>
+                      <h4>Sozan Hama Kaka</h4>
                       <h5>Frontend Developer</h5>
                     </div>
                     <div class="sci">
-                      <a href="#"
+                      <a href="https://www.instagram.com/bitsinfinity/"
                         ><i class="fa fa-instagram" aria-hidden="true"></i
                       ></a>
-                      <a href="#"
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100087399739017"
                         ><i
                           class="fa fa-facebook-official"
                           aria-hidden="true"
                         ></i
                       ></a>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      <a
+                        href="https://www.linkedin.com/in/bitsinfinty-506514256/"
+                        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
                       ></a>
                     </div>
                   </div>
@@ -282,24 +286,26 @@
                 <div class="card">
                   <div class="content">
                     <div class="imgBx">
-                      <img src="img/Efan.jpg" alt="" />
+                      <img class="full-size" src="img/yifan.jpg" alt="" />
                     </div>
                     <div class="contentBx">
                       <h4>Yiffan Du</h4>
                       <h5>Software Engineer</h5>
                     </div>
                     <div class="sci">
-                      <a href="#"
+                      <a href="https://www.instagram.com/bitsinfinity/"
                         ><i class="fa fa-instagram" aria-hidden="true"></i
                       ></a>
-                      <a href="#"
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100087399739017"
                         ><i
                           class="fa fa-facebook-official"
                           aria-hidden="true"
                         ></i
                       ></a>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      <a
+                        href="https://www.linkedin.com/in/bitsinfinty-506514256/"
+                        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
                       ></a>
                     </div>
                   </div>
@@ -307,24 +313,26 @@
                 <div class="card">
                   <div class="content">
                     <div class="imgBx">
-                      <img src="img/sha.jpg" alt="" />
+                      <img class="full-size" src="img/xia.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Xia</h4>
-                      <h5>Research Analyst</h5>
+                      <h4>Xia Xiaoyu</h4>
+                      <h5>Technical Analyst</h5>
                     </div>
                     <div class="sci">
-                      <a href="#"
+                      <a href="https://www.instagram.com/bitsinfinity/"
                         ><i class="fa fa-instagram" aria-hidden="true"></i
                       ></a>
-                      <a href="#"
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100087399739017"
                         ><i
                           class="fa fa-facebook-official"
                           aria-hidden="true"
                         ></i
                       ></a>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      <a
+                        href="https://www.linkedin.com/in/bitsinfinty-506514256/"
+                        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
                       ></a>
                     </div>
                   </div>
@@ -332,24 +340,26 @@
                 <div class="card">
                   <div class="content">
                     <div class="imgBx">
-                      <img src="img/Ja.jpg" alt="" />
+                      <img class="full-size" src="img/cao.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Cao</h4>
+                      <h4>Cao Du</h4>
                       <h5>Software Engineer</h5>
                     </div>
                     <div class="sci">
-                      <a href="#"
+                      <a href="https://www.instagram.com/bitsinfinity/"
                         ><i class="fa fa-instagram" aria-hidden="true"></i
                       ></a>
-                      <a href="#"
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100087399739017"
                         ><i
                           class="fa fa-facebook-official"
                           aria-hidden="true"
                         ></i
                       ></a>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      <a
+                        href="https://www.linkedin.com/in/bitsinfinty-506514256/"
+                        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
                       ></a>
                     </div>
                   </div>
@@ -371,14 +381,14 @@
               <div class="contact-info-item padd-15">
                 <div class="icon"><i class="fa fa-phone"></i></div>
                 <h4>Call Us On</h4>
-                <p>010101010101</p>
+                <p>+49-15753600829</p>
               </div>
               <!-- ===== Contact info item End ===== -->
               <!-- ===== Contact info item start ===== -->
               <div class="contact-info-item padd-15">
                 <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                 <h4>Office</h4>
-                <p>Chemnitz</p>
+                <p>Vettersstraße 66, 09126 Chemnitz</p>
               </div>
               <!-- ===== Contact info item End ===== -->
               <!-- ===== Contact info item start ===== -->
@@ -392,13 +402,13 @@
               <div class="contact-info-item padd-15">
                 <div class="icon"><i class="fa fa-globe-europe"></i></div>
                 <h4>Website</h4>
-                <p>www.bitsinfinity.com</p>
+                <p>www.bitsinfinity.de</p>
               </div>
               <!-- ===== Contact info item End ===== -->
             </div>
             <h3 class="contact-title padd-15">Send Me An Email</h3>
             <h4 class="contact-sub-title padd-15">
-              I'M VERY RESPONSIVE TO MESSAHE
+              I'M VERY RESPONSIVE TO MESSAGE
             </h4>
             <!-- ===== Contact Form ===== -->
             <div class="row">
@@ -470,21 +480,21 @@
           <div class="social-icon-container">
             <a
               class="social-media-container-icon"
-              href="www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=100087399739017"
               target="_blank"
               rel="noopener"
               ><i class="fa-brands fa-facebook"></i
             ></a>
             <a
               class="social-media-container-icon"
-              href="www.facebook.com"
+              href="https://www.instagram.com/bitsinfinity/"
               target="_blank"
               rel="noopener"
               ><i class="fa-brands fa-square-instagram"></i
             ></a>
             <a
               class="social-media-container-icon"
-              href="www.facebook.com"
+              href="https://www.linkedin.com/in/bitsinfinty-506514256/"
               target="_blank"
               rel="noopener"
               ><i class="fa-brands fa-linkedin"></i
@@ -513,6 +523,31 @@
           fxName: "rightToLeft",
         });
       });
+    </script>
+    <script>
+      let icon = document.getElementById("icon");
+      let toggleText = document.querySelector("#toggle-mode-text");
+      let homeImage = document.querySelector("#home-img");
+      // let card = document.querySelector(".team-container .card");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          toggleText.innerHTML = "Light Mode";
+          icon.classList.remove("fa-moon");
+          icon.classList.add("fa-sun");
+          homeImage.src = "IMG/home-white-bg.png";
+          $(".card").css("boxShadow", "none");
+        } else {
+          toggleText.innerHTML = "Dark Mode";
+          icon.classList.remove("fa-sun");
+          icon.classList.add("fa-moon");
+          homeImage.src = "IMG/new-bg.png";
+          $(".card").css(
+            "boxShadow",
+            "0.6em 0.6em 1.2em #d2dcef, -0.5em -0.5em 1em #ffffff"
+          );
+        }
+      };
     </script>
   </body>
 </html>

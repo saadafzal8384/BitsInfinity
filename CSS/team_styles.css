@@ -8,8 +8,7 @@
 .team-container .card
 {
     width: 18%;
-    height: 350px;
-    padding: 20px 15px;
+    height: 410px;
     background: #f2f3f7;
     box-shadow: 0.6em 0.6em 1.2em #d2dcef, -0.5em -0.5em 1em #ffffff;
     border-radius: 20px;
@@ -23,12 +22,14 @@
 }
 .team-container .card .content .imgBx
 {
-    width: 175px;
-    height: 175px;  
-    border-radius: 50%;
+    width: 180px;
+    height: 250px;  
     position: relative;
-    margin-bottom: 20px;
     overflow: hidden;
+}
+.full-size {
+    width: 100%;
+    height: 100%;
 }
 .team-container .card .content .imgBx img
 {
@@ -43,8 +44,8 @@
 }
 .team-container .card .content .contentBx h4
 {
-    color: #00e091;
-    font-size: 1rem;
+    color: #6ecbc3;
+    font-size: 0.85rem;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
@@ -70,7 +71,7 @@
     transition: color 0.4s;
 }
 .team-container .card .content .sci a:hover{
-    color: #00e091;
+    color: #6ecbc3;
 }
 @media (max-width: 70em) {
     .team-container .card {

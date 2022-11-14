@@ -24,3 +24,4 @@ closeMenuBtn.addEventListener("click", () => {
   mobileNavigation.style.display = "none";
   menuIcon.style.color = "black";
 });
+
