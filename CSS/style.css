@@ -590,14 +590,14 @@ textarea {
     color: var(--clr-main-black);
 }
 .culture-tagline {
-    margin: 5rem 0rem;
+    margin: 2rem 0rem;
     color: var(--clr-main-black);
 }
 .culture-container {
     display: flex;
     margin-top: 2rem;
     gap: 2rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .culture-text {
     text-align: justify;
