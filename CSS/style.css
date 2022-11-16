@@ -613,9 +613,6 @@ textarea {
    width:250px;
 
 }
-.about-container {
-    margin-top: 5rem;
-}
 @media (max-width: 60rem) {
     .mobile-nav-container {
         background: #000;
