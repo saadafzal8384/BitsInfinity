@@ -35,20 +35,34 @@
         </button>
         <ul class="mobile-navigation" data-visible="false">
           <li>
-            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="mobile-nav-item" href="#home"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
           </li>
           <li>
-            <a href="#about"><i class="fa-solid fa-file-lines"></i> About</a>
+            <a class="mobile-nav-item" href="#about"
+              ><i class="fa-solid fa-file-lines"></i> About</a
+            >
           </li>
           <li>
-            <a href="#values"><i class="fa-solid fa-heart"></i> Culture</a>
+            <a class="mobile-nav-item" href="#values"
+              ><i class="fa-solid fa-heart"></i> Culture</a
+            >
           </li>
           <li>
-            <a href="#team"><i class="fa-solid fa-people-group"></i> Team</a>
+            <a class="mobile-nav-item" href="#team"
+              ><i class="fa-solid fa-people-group"></i> Team</a
+            >
           </li>
           <li>
-            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+            <a class="mobile-nav-item" href="#contact"
+              ><i class="fa-solid fa-envelope"></i> Contact</a
+            >
           </li>
+          <div class="toggle-mode-list-item">
+            <i class="toggle-icon fa-solid fa-moon" id="toggle-mode-mobile"></i>
+            <span id="toggle-mode-text">Dark Mode</span>
+          </div>
         </ul>
       </div>
       <!-- ===== Aside Start ===== -->
@@ -94,13 +108,17 @@
             </button>
             <div class="home-text-column">
               <h2 class="primary-heading">BitsInfinity</h2>
-              <h3 class="sub-text">Infinite data, infinite possibilities</h3>
+              <h3 class="sub-text">Trust starts here!</h3>
               <p class="company-description">
-                BitsInfinity is an industrial data management company. We
-                provide large numbers of stable services to manage data that
-                generated from different fields of industry.
+                With Bits Infinity, you can transform your data from a liability
+                into an opportunity; at bits infinity, we help you deliver
+                clean, complete, and uncompromised data whenever and whatever
+                you need it. You can make every decision count with no more
+                unknowns and no more uncertainty; you have trusted information
+                that you can use to increase revenue, decrease costs, and reduce
+                risk.
               </p>
-              <a href="#contact" class="btn hire-me">Learn More</a>
+              <a href="#contact" class="btn hire-me">Discover More ...</a>
             </div>
             <div class="home-image-column">
               <img
@@ -117,30 +135,36 @@
         <section class="about section" id="about">
           <div class="container">
             <div class="about-container">
-              <div class="image-column">
-                <img class="column-image" src="img/team.jpg" alt="Team image" />
+              <div class="about-text-container">
+                <div class="col-50">
+                  <img
+                    class="column-image"
+                    src="img/team-without-bg.png"
+                    alt="Team image"
+                  />
+                </div>
+                <div class="col-50">
+                  <h2 class="section-heading">ABOUT US</h2>
+                  <p class="section-text about-us-text-container">
+                    BitsInfinity is a digital service provider, which offers
+                    services in the domain of Industrial data management. We
+                    cover multiple industries, such as manufacturing, finance,
+                    research, IoT, E-Commerce, and more. We are committed to
+                    achieving excellence in our services by satisfying our
+                    customers by addressing their needs in a cost-effective,
+                    result-oriented, and timely manner.
+                  </p>
+                </div>
               </div>
-              <div class="text-column">
-                <h2 class="section-heading">ABOUT US</h2>
+              <div class="about-us-text-container">
                 <p class="section-text">
-                  BitsInfinity is a high-tech enterprise dedicated to industrial
-                  data management. The business covers multiple industries and
-                  is committed to the construction of the big data industry
-                  ecological chain. We adopt advanced technology to realize the
-                  full life cycle management of data from collection, processing
-                  to application. Our products are applied to various fields
-                  such as the Internet, finance, government, and intelligent
-                  manufacturing.
-                </p>
-                <p class="section-text">
-                  BitsInfinity is a high-tech enterprise dedicated to industrial
-                  data management. The business covers multiple industries and
-                  is committed to the construction of the big data industry
-                  ecological chain. We adopt advanced technology to realize the
-                  full life cycle management of data from collection, processing
-                  to application. Our products are applied to various fields
-                  such as the Internet, finance, government, and intelligent
-                  manufacturing.
+                  To move your business forward, you need to rely on data while
+                  making important decisions. A small amount of unreliable
+                  information puts your decisions at risk, costs you time and
+                  money, and even sinks your business. You can manage your most
+                  valuable asset and make decisions with complete confidence
+                  with the help of Bits Infinity. However, you can completely
+                  believe in the data running your business.
                 </p>
               </div>
             </div>
@@ -150,8 +174,48 @@
         <!-- ===== Service Section Start ===== -->
         <section class="Values section" id="values">
           <div class="container">
+            <div class="culture-headline">
+              <h2 class="section-heading">OUR CULTURE</h2>
+              <p class="culture-tagline">
+                In order to foster creativity, a culture that values and rewards
+                risk must be established.
+              </p>
+            </div>
+            <div class="culture-container">
+              <div class="card">
+                <h3 class="culture-heading">VISION</h3>
+                <img src="img/Vision.jpg" class="square-image" alt="" />
+                <p class="culture-text">
+                  To become a leading digital service provider in Industrial
+                  Data management!
+                </p>
+              </div>
+              <div class="card">
+                <h3 class="culture-heading">MISSION</h3>
+                <img src="img/Mision.jpg" class="square-image" alt="" />
+                <p class="culture-text">We aim to help businesses with their</p>
+              </div>
+              <div class="card">
+                <h3 class="culture-heading">PURPOSE</h3>
+                <img src="img/Goals.jpg" class="square-image" alt="" />
+                <p class="culture-text">
+                  We are true to our customers and to our core values.
+                </p>
+              </div>
+              <div class="card">
+                <h3 class="culture-heading">VALUES</h3>
+                <img src="img/value-new.png" class="square-image" alt="" />
+                <p class="culture-text">
+                  We are true to our customers and to our core values.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="Values section" id="values">
+          <div class="container">
             <div class="vision">
-              <h2 class="section-heading">VISION & VALUES</h2>
+              <h2 class="section-heading">OUR CULTURE</h2>
               <p class="vision-text">
                 We envision becoming a leading digital service provider in the
                 domain of Industrial data management. We strive to create value
@@ -164,8 +228,11 @@
             <div class="values-container">
               <div class="value">
                 <i class="fa-solid fa-handshake value-icon"></i>
-                <h3 class="value-heading">Commitment</h3>
-                <p>We are committed to customer’s satisfaction.</p>
+                <h3 class="value-heading">VISION</h3>
+                <p>
+                  To become a leading digital service provider in Industrial
+                  Data management!
+                </p>
               </div>
               <div class="value">
                 <i class="fa-solid fa-face-smile value-icon"></i>
@@ -184,10 +251,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- ===== Service  Section End ===== -->
         <!-- ===== Portfolio Section Start ===== -->
-        <section class="mission section">
+        <!-- <section class="mission section">
           <div class="container">
             <div class="about-container">
               <div class="image-column">
@@ -216,7 +283,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- ===== Portfolio  Section End ===== -->
         <!-- ==== Team Section Started =====  -->
         <section class="team section" id="team">
@@ -232,7 +299,7 @@
                 <div class="card">
                   <div class="content">
                     <div class="imgBx">
-                      <img class="full-size" src="img/saad.jpg" alt="" />
+                      <img class="full-size" src="img/saad-01.jpg" alt="" />
                     </div>
                     <div class="contentBx">
                       <h4>Saad Afzal</h4>
@@ -343,7 +410,7 @@
                       <img class="full-size" src="img/cao.jpg" alt="" />
                     </div>
                     <div class="contentBx">
-                      <h4>Cao Du</h4>
+                      <h4>Jiahao Cao</h4>
                       <h5>Software Engineer</h5>
                     </div>
                     <div class="sci">
@@ -406,61 +473,73 @@
               </div>
               <!-- ===== Contact info item End ===== -->
             </div>
-            <h3 class="contact-title padd-15">Send Me An Email</h3>
+            <h3 class="contact-title padd-15">Send Us An Email</h3>
             <h4 class="contact-sub-title padd-15">
-              I'M VERY RESPONSIVE TO MESSAGE
+              WE ARE VERY RESPONSIVE TO MESSAGES
             </h4>
             <!-- ===== Contact Form ===== -->
             <div class="row">
               <div class="contact-form padd-15">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Name"
-                      />
+                <form
+                  action="https://formsubmit.co/info@bitsinfinity.de"
+                  method="POST"
+                >
+                  <div class="row">
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                          name="name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Email"
+                          name="email"
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Email"
-                      />
+
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Subject"
+                          name="subject"
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Subject"
-                      />
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          placeholder="Message"
+                          name="message"
+                          required
+                        ></textarea>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <textarea
-                        name=""
-                        class="form-control"
-                        id=""
-                        placeholder="Message"
-                      ></textarea>
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <button type="submit" class="btn">Send Message</button>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -523,12 +602,11 @@
           fxName: "rightToLeft",
         });
       });
-    </script>
-    <script>
       let icon = document.getElementById("icon");
+      // let mobileIcon = document.getElementById("toggle-mode-mobile");
       let toggleText = document.querySelector("#toggle-mode-text");
       let homeImage = document.querySelector("#home-img");
-      // let card = document.querySelector(".team-container .card");
+
       icon.onclick = function () {
         document.body.classList.toggle("dark-theme");
         if (document.body.classList.contains("dark-theme")) {

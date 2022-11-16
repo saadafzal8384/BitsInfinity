@@ -1,7 +1,7 @@
 :root
 {
     --clr-background: #FFFFFF;
-    --clr-sea-green: #6ecbc3;
+    --clr-sea-green: #1d6762;
     --clr-dark-green: #4ca7a0;
     --clr-bg-grey: #f0f0f2;
     --clr-white: #ffffff;
@@ -47,7 +47,7 @@ html,body{
     width: 50px;
     height: 50px;
     position: absolute;
-    left: 85%;
+    left: 80%;
     top: 2%;
     background: none;
     border: none;
@@ -94,14 +94,14 @@ list-style: none;
 }
 .main-content
 {
-    padding-left: 225px;
+    padding-left: 220px;
 }
 .padd-15{
     padding-left: 15px;
     padding-right: 15px;
 }
 .container{
-    max-width: 1100px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
 }
@@ -128,16 +128,16 @@ list-style: none;
     font-weight: 500;
     padding: 12px 35px;
     color: var(--clr-white);
-    border-radius: 40px;
+    border-radius: 30px;
     display: inline-block;
     white-space: nowrap;
     border: none;
-    background: #000;
+    background: var(--clr-sea-green);
     transition: all 0.3s ease;
 }   
 .btn:hover
 {
-    background: var(--clr-sea-green);
+    background: var(--clr-main-black);
     color: var(--clr-white);
     font-weight: bold;
     transform: scale(1.05);
@@ -151,7 +151,7 @@ list-style: none;
 /* aside */
 .aside
 {
-    width: 225px;
+    width: 220px;
     height: 100%;
     background: var(--clr-sea-green);
     position: fixed;
@@ -238,9 +238,8 @@ list-style: none;
 }
 h3.sub-text
 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin: 15px 0px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
     color: var(--clr-main-black);
 }
 h3.hello span{
@@ -295,14 +294,14 @@ color: var(--skin-color);
     color: var(--clr-main-black);
     text-align: center;
     font-size: 18px;
-    margin: 2rem 0rem;
+    margin: 0.5rem 0rem;
 }
 .contact-sub-title
 {
     color: var(--text-black-900);
     text-align: center;
     font-size: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     color: var(--clr-main-black);
 }
 .contact .contact-info-item
@@ -310,7 +309,7 @@ color: var(--skin-color);
 flex: 0 0 25%;
 max-width: 25%;
 text-align: center;
-margin-bottom: 60px;
+margin-bottom: 45px;
 }
 .contact .contact-info-item .icon
 {
@@ -354,7 +353,7 @@ margin-bottom: 60px;
 }
 .contact .contact-form .form-item
 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .contact .contact-form .form-item .form-control
 {
@@ -382,17 +381,17 @@ margin-bottom: 60px;
     padding: 0 50px;
 }
 h2.primary-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing:0.5rem;
-    padding: 2rem 0rem;
+    padding: 0.75rem 0rem;
     color: var(--clr-main-black);
 }
 .company-description {
     font-size: 18px;
     line-height: 2rem;
     text-align: justify;
-    padding: 2rem 0rem;
+    padding: 0.75rem 0rem;
     color: var(--clr-light-black);
 }
 .home-container {
@@ -406,7 +405,7 @@ h2.primary-heading {
 }
 .home-text-column {
     width: 50%;
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 3rem;
 }
 .home-image-column {
@@ -418,6 +417,17 @@ section.about,section.mission  {
 }
 .about-container {
     display: flex;
+    flex-direction: column;
+}
+.col-50 {
+    width: 49%;
+}
+.about-text-container {
+    display: flex;
+    gap: 2rem;
+}
+.about-us-text-container {
+    line-height: 2rem;
 }
 .column-image {
     width: 100%;
@@ -570,6 +580,42 @@ textarea {
 .home-text-column a {
     margin-top: 2rem;
 }
+.culture-heading {
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--clr-main-black);
+}
+.culture-headline {
+    text-align: center;
+    color: var(--clr-main-black);
+}
+.culture-tagline {
+    margin: 5rem 0rem;
+    color: var(--clr-main-black);
+}
+.culture-container {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.culture-text {
+    text-align: justify;
+    line-height: 2rem;
+    max-width: 250px;
+    margin-top: 1rem;
+    color: var(--clr-main-black);
+}
+.culture-container .card {
+    width: 25%;
+}
+.square-image {
+   width:250px;
+
+}
+.about-container {
+    margin-top: 5rem;
+}
 @media (max-width: 60rem) {
     .mobile-nav-container {
         background: #000;
@@ -651,5 +697,23 @@ textarea {
     .section-heading {
         text-align: center;
         padding-top:2rem;
+    }
+    .about-text-container {
+        flex-direction: column;
+    }
+    .culture-container  {
+        flex-direction: column;
+    }
+    .culture-container .card  {
+        width: 100%;
+    }
+    .square-image {
+        width: 100%;
+    }
+    .col-50 {
+        width: 100%;
+    }
+    .culture-text {
+        max-width: 100%;
     }
 }
