@@ -71,6 +71,7 @@ mobileIcon.addEventListener("click", () => {
   closeMenuBtn.style.display = "none";
   mobileNavigationContainer.style.display = "none";
   mobileNavigation.style.display = "none";
+  let toggleTextMobile = document.querySelector("#toggle-mode-text-mobile");
   if (document.body.classList.contains("dark-theme")) {
     menuIcon.style.color = "white";
     menuIcon.style.position = "fixed";
@@ -80,12 +81,14 @@ mobileIcon.addEventListener("click", () => {
   }
   if (document.body.classList.contains("dark-theme")) {
     toggleText.innerHTML = "Light Mode";
+    toggleTextMobile.innerHTML = "Light Mode";
     mobileIcon.classList.remove("fa-moon");
     mobileIcon.classList.add("fa-sun");
     homeImage.src = "IMG/home-white-bg.png";
     $(".card").css("boxShadow", "none");
   } else {
     toggleText.innerHTML = "Dark Mode";
+    toggleTextMobile.innerHTML = "Dark Mode";
     mobileIcon.classList.remove("fa-sun");
     mobileIcon.classList.add("fa-moon");
     homeImage.src = "IMG/new-bg.png";
@@ -95,3 +98,28 @@ mobileIcon.addEventListener("click", () => {
     // );
   }
 });
+
+let icon = document.getElementById("icon");
+// let mobileIcon = document.getElementById("toggle-mode-mobile");
+let toggleText = document.querySelector("#toggle-mode-text");
+let toggleTextMobile = document.querySelector("#toggle-mode-text-mobile");
+let homeImage = document.querySelector("#home-img");
+
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    toggleText.innerHTML = "Light Mode";
+    toggleTextMobile.innerHTML = "Light Mode";
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+    homeImage.src = "IMG/home-white-bg.png";
+    $(".card").css("boxShadow", "none");
+  } else {
+    toggleText.innerHTML = "Dark Mode";
+    toggleTextMobile.innerHTML = "Dark Mode";
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+    homeImage.src = "IMG/new-bg.png";
+    $(".card").css("boxShadow", "none");
+  }
+};
